@@ -8,6 +8,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .header__icon{
@@ -114,11 +117,17 @@ span{
     gap: 56px;
 }
 
-.faq__frequently-questions{
-    width: 50%;
+.faq__box{
     display: flex;
     flex-direction: column;
     gap: 33px;
+
+    position: sticky;
+    top: 200px;
+}
+
+.faq__frequently-questions{
+    width: 50%;
 }
 
 .faq__title{
@@ -243,10 +252,14 @@ span{
 
 .comment__banner{
     width: 50%;
+    
 }
 
 .comment__banner-div{
     padding-left: 86px;
+    
+    position: sticky;
+    top: 200px;
 }
 
 .comment__banner-content{
