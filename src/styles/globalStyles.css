@@ -1,5 +1,6 @@
 @import url("./reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("./index.css");
 
 :root{
     --brand1: #4C6EF5;
@@ -11,7 +12,7 @@
     --gray5: #CED4DA;
     --gray6: #EDF2FF;
     --gray7: #F8F9FA;
-    --fontDefault: 'Roboto', sans-serif;
+    --fontDefault: 'Inter', sans-serif;
     --fontWeightTitle1: 600;
     --fontSizeTitle1: 52px;
     --lineHeightTitle1: 140%;
@@ -33,7 +34,6 @@
     --fontWeightText4: 600;
     --fontSizeText4: 16px;
     --lineHeightText4: 150%;
-    --inputFontFamily: 'Inter', sans-serif;
     --inputDefaultBackground: var(--gray1);
     --inputDefaultColor: var(--gray4);
     --inputDefaultBorder: 1px solid var(--gray1);
@@ -57,6 +57,7 @@
 }
 
 body{
-    background-color: var(--brand1);
-    font-family: var(--inputFontFamily)
+    font-family: var(--fontDefault);
+    display: flex;
+    flex-direction: column;
 }
