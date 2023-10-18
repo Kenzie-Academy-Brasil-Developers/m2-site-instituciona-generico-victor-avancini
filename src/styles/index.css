@@ -2,8 +2,8 @@
     background-color: var(--gray1);
     border-bottom: 2px solid var(--brand1);
 
-    height: 100px;
-    padding: 20px 236px;
+    height: clamp(1rem, -0.5rem + 7.5vw, 6.25rem);
+    padding: clamp(0.25rem, -0.036rem + 1.429vw, 1.25rem) clamp(0rem, -2.857rem + 14.286vw, 10rem);
 
     display: flex;
     align-items: center;
@@ -14,12 +14,12 @@
 }
 
 .header__icon{
-    width: 200px;
+    max-width: clamp(3rem, 0.286rem + 13.571vw, 12.5rem);
 }
 
 .header__button{
-    height: 60px;
-    padding: 20px 32px;
+    height: var(--buttonHeight);
+    padding: var(--buttonPadding);
 
     background-color: var(--gray1);
     border: 1px solid var(--gray7);
@@ -28,20 +28,22 @@
     font-size: var(--fontSizeText4);
     font-weight: var(--fontWeightText4);
     line-height: var(--lineHeightText4);
+
+    display: flex;
+    align-items: center;
 }
 
 .banner{
     background-color: var(--gray2);
 
-    padding: 250px 236px;
+    padding: clamp(3rem, -0.429rem + 17.143vw, 15rem) clamp(0rem, -2.857rem + 14.286vw, 10rem);
     display: flex;
     flex-direction: column;
-    gap: 44px;
+    gap: clamp(1rem, 0.5rem + 2.5vw, 2.75rem);
     align-items: center;
 }
 
 .banner__title{
-    width: 1085px;
     text-align: center;
     color: var(--gray6);
 
@@ -55,7 +57,7 @@ span{
 }
 
 .banner__text{
-    width: 770px;
+    max-width: clamp(20rem, 12rem + 40vw, 48rem);
     text-align: center;
 
     color: var(--gray4);
@@ -66,8 +68,8 @@ span{
 }
 
 .banner__button{
-    height: 60px;
-    padding: 20px 32px;
+    height: var(--buttonHeight);
+    padding: var(--buttonPadding);
 
     background-color: var(--brand1);
     border: 1px solid var(--brand1);
@@ -76,16 +78,19 @@ span{
     font-size: var(--fontSizeText4);
     font-weight: var(--fontWeightText4);
     line-height: var(--lineHeightText4);
+
+    display: flex;
+    align-items: center;
 }
 
 .about{
     background-color: var(--gray1);
 
-    padding: 82px 236px;
+    padding: clamp(1rem, -0.143rem + 5.714vw, 5rem) clamp(0rem, -2.857rem + 14.286vw, 10rem);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 56px;
+    gap: clamp(1rem, 0.286rem + 3.571vw, 3.5rem);
 }
 
 .about__title{
@@ -111,19 +116,19 @@ span{
 .faq{
     background-color: var(--gray2);
 
-    padding: 82px 236px;
+    padding: clamp(1rem, -0.143rem + 5.714vw, 5rem) clamp(0rem, -2.857rem + 14.286vw, 10rem);
     display: flex;
     justify-content: space-between;
-    gap: 56px;
+    gap: clamp(1rem, 0.286rem + 3.571vw, 3.5rem);
 }
 
 .faq__box{
     display: flex;
     flex-direction: column;
-    gap: 33px;
+    gap: clamp(0.5rem, 0.071rem + 2.143vw, 2rem);
 
     position: sticky;
-    top: 200px;
+    top: 12.5rem;
 }
 
 .faq__frequently-questions{
@@ -133,7 +138,7 @@ span{
 .faq__title{
     color: var(--gray6);
 
-    padding-right: 87px;
+    padding-right: clamp(1.5rem, 0.357rem + 5.714vw, 5.5rem);
 
     font-size: var(--fontSizeTitle2);
     font-weight: var(--fontWeightTitle2);
@@ -144,7 +149,7 @@ span{
     text-align: justify;
     color: var(--gray4);
 
-    padding-right: 87px;
+    padding-right: clamp(1.5rem, 0.357rem + 5.714vw, 5.5rem);
 
     font-size: var(--fontSizeText1);
     font-weight: var(--fontWeightText1);
@@ -152,9 +157,9 @@ span{
 }
 
 .faq__button{
-    width: 290px;
-    height: 60px;
-    padding: 20px 32px;
+    max-width: clamp(5rem, 1.286rem + 18.571vw, 18rem);
+    height: var(--buttonHeight);
+    padding: var(--buttonPadding);
 
     background-color: var(--brand1);
     border: 1px solid var(--brand1);
@@ -163,19 +168,22 @@ span{
     font-size: var(--fontSizeText4);
     font-weight: var(--fontWeightText4);
     line-height: var(--lineHeightText4);
+
+    display: flex;
+    align-items: center;
 }
 
 .faq__list{
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: clamp(1rem, 0.214rem + 3.929vw, 3.75rem);
 }
 
 .faq__item{
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    gap: clamp(0.5rem, 0.214rem + 1.429vw, 1.5rem);
 }
 
 .faq__question{
@@ -199,28 +207,28 @@ span{
 .comments{
     background-color: var(--gray2);
 
-    padding: 82px 236px;
+    padding: clamp(1rem, -0.143rem + 5.714vw, 5rem) clamp(0rem, -2.857rem + 14.286vw, 10rem);
     display: flex;
-    gap: 56px;
+    gap: clamp(1rem, 0.286rem + 3.571vw, 3.5rem);
 }
 
 .comments__list{
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 82px;
+    gap: clamp(1.75rem, 0.821rem + 4.643vw, 5rem);
 }
 
 .comment__item{
     display: flex;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .comment__author{
     display: flex;
-    width: 40%;
     flex-direction: column;
-    gap: 8px;
+    gap: .5rem;
+    min-width: clamp(4rem, 1.714rem + 11.429vw, 12rem);
 }
 
 .comment__author-name{
@@ -229,6 +237,9 @@ span{
     font-size: var(--fontSizeTitle3);
     font-weight: var(--fontWeightTitle3);
     line-height: var(--lineHeightTitle3);
+
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .comment__author-class{
@@ -240,8 +251,6 @@ span{
 }
 
 .comment__text{
-    width: 60%;
-
     text-align: justify;
     color: var(--gray5);
 
@@ -252,14 +261,13 @@ span{
 
 .comment__banner{
     width: 50%;
-    
 }
 
 .comment__banner-div{
-    padding-left: 86px;
+    padding-left: clamp(1.75rem, 0.821rem + 4.643vw, 5rem);
     
     position: sticky;
-    top: 200px;
+    top: 12.5rem;
 }
 
 .comment__banner-content{
@@ -267,9 +275,9 @@ span{
 
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 2rem;
 
-    padding: 80px 52px;
+    padding: clamp(0.5rem, -0.786rem + 6.429vw, 5rem) clamp(0.25rem, -0.607rem + 4.286vw, 3.25rem);
 }
 
 .comment__title{
@@ -291,11 +299,15 @@ span{
 
 .footer{
     background-color: var(--gray1);
-    height: 100px;
+    height: clamp(1rem, -0.5rem + 7.5vw, 6.25rem);
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer__icon{
+    max-width: clamp(3rem, 0.286rem + 13.571vw, 12.5rem);
 }
 
 .modalController{
@@ -306,15 +318,15 @@ span{
 .modalContainer{
     display: flex;
     flex-direction: column;
-    gap: 31px;
+    gap: clamp(0.5rem, 0.071rem + 2.143vw, 2rem);
 
     border: 2px solid var(--brand1);
-    padding: 40px 28px;
+    padding: clamp(1rem, 0.571rem + 2.143vw, 2.5rem) clamp(0.5rem, 0.143rem + 1.786vw, 1.75rem);
     background-color: var(--gray2);
 }
 
 .modalContainer > input {
-    padding: 14px 20px;
+    padding: .75rem 1.25rem;
     border: 1px solid var(--gray1);
     background-color: var(--gray1);
     
@@ -339,20 +351,20 @@ span{
 }
 
 .closeModal{
-    padding: 0px 12px;
-    height: 32px;
+    padding: 0rem .75rem;
+    height: 2rem;
     border: none;
-    border-radius: 4px;
+    border-radius: .25rem;
     background-color: var(--gray3);
 
     color: var(--gray4);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
-    line-height: 32px;
+    line-height: 2rem;
 }
 
 .register__text{
-    width: 448px;
+    max-width: clamp(14rem, 10rem + 20vw, 28rem);
     text-align: justify;
 
     color: var(--gray4);
@@ -362,10 +374,118 @@ span{
 }
 
 .register__button{
-    height: 60px;
-    padding: 0px 32px;
+    height: var(--buttonHeight);
+    padding: var(--buttonPadding);
 
     border: 1px solid var(--brand1);
     background-color: var(--brand1);
     color: var(--gray7);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 1024px) {
+    .comment__item{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .comment__author{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .comment__author-class{
+        display: flex;
+        align-items: center;
+    }
+
+    .comment__banner-div{
+        padding-left: 0;
+        
+        position: sticky;
+        top: 12.5rem;
+    }
+}
+
+@media(max-width: 768px){
+    .about{   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .about__text{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .faq{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .faq__box{
+        display: flex;
+        align-items: center;
+    }
+    
+    .faq__frequently-questions{
+        width: 100%;
+    }
+    
+    .faq__title{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;
+    }
+    
+    .faq__text{
+        display: flex;
+        align-items: center;
+        padding-right: 0;
+    }
+    
+    .faq__button{
+        max-width: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .faq__list{
+       width: 100%;
+    }
+
+    .comments{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .comments__list{
+        width: 100%;
+    }
+    
+    .comment__banner{
+        width: 100%;
+    }
+}
+
+@media(max-width: 425px){
+    .header__button{
+        display: none;
+    }
 }
